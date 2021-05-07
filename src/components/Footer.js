@@ -18,6 +18,7 @@ const Footer = () => {
 
              <div className="bottom">
                 {/* <p>Made With <span style="color: red"><i className="fas fa-heart"></i></span> Chandan Paul</p> */}
+                <p>© All Right Reserved. Made with ❤️ ChandanPaul.</p>
             </div>
 
         </footer>
