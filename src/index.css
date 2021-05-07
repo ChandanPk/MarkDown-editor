@@ -104,7 +104,6 @@ body {
     margin-top: 1em;
     background-color: #132c33;
     min-height: 15em;
-    /* height: 200px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -132,5 +131,4 @@ body {
     padding: 1em;
     color: #ffffff;
     min-width: 10px;
-
 }
