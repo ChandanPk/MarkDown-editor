@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import MarkdownSanitized from './components/MarkdownSanitized'
+import './index.css';
+import NavBar from './components/Navbar';
+import Headers from './components/Headers';
+import Footer from './components/Footer';
+import InputField from "./components/InputField";
+import { InputProvider } from './contexts/inputContext'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <NavBar />
+      <Headers />
+
+
+      <InputProvider>
+        <div className="editor">
+          <InputField />
+          <MarkdownSanitized />
+        </div>
+      </InputProvider>
+
+
+      <Footer />
+
     </div>
   );
 }
