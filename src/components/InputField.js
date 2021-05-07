@@ -3,7 +3,7 @@ import { InputContext } from '../contexts/inputContext'
 
 const InputField = () => {
 
- 
+    const [input, setInput] = useContext(InputContext);
     
 
     const handleInput = (e)=> {
